@@ -43,4 +43,12 @@ jobs:
 
     # 🐳 Push Docker image
     - name: Push Docker Image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/petclinic:${{ github.run_number }}
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/customers:${{ github.run_number }}
+
+       # 🐳 Push Docker image
+    - name: Push Docker Image
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/vets:${{ github.run_number }}
+
+       # 🐳 Push Docker image
+    - name: Push Docker Image
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/visits:${{ github.run_number }}

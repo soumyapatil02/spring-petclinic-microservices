@@ -8,8 +8,8 @@ pipeline {
     
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
-        JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
-        PATH = "/usr/lib/jvm/java-17-openjdk-amd64/bin:${env.PATH}"
+        // JAVA_HOME = '/usr/lib/jvm/java-17-openjdk-amd64'
+        // PATH = "/usr/lib/jvm/java-17-openjdk-amd64/bin:${env.PATH}"
     }
     
     stages {
